@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="topbar_bg">#b6292d</color>
+    <color name="bottomtab_normal">#c8bca5</color>
+    <color name="bottomtab_press">#8b572a</color>
+    <color name="line">#c8bca5</color>
+    <color name="main_tab_top">#668F99</color>
+    <color name="menu_left_color">#668F99</color>
+    <color name="menu_left_text">#FFFFFF</color>
+    <color name="micro_application_title">#000000</color>
+    <color name="micro_application_bg">#F0F0EC</color>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="sliding_menu_offset">300dp</dimen>
+    <dimen name="header_img_round_amplitude">20dp</dimen>
+    <dimen name="header_text_size">22dp</dimen>
+    <dimen name="header_img_left_size">15dp</dimen>
+    <dimen name="micro_application_title_size">15dp</dimen>
+
+</resources>
