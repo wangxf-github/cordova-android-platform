@@ -27,8 +27,8 @@ public class GuideActivity extends Activity implements OnClickListener, OnPageCh
   public static Context context;
     
   //引导图片资源  
-  private static final int[] pics = { R.drawable.welcome_1,
-          R.drawable.welcome_2, R.drawable.welcome_3,
+  private static final int[] pics = { R.drawable.qq,
+          R.drawable.tencent, R.drawable.weixin,
           };  
     
   //底部小店图片  
@@ -53,13 +53,13 @@ public class GuideActivity extends Activity implements OnClickListener, OnPageCh
 	        for(int i=0; i<pics.length; i++) {  
 	            ImageView iv = new ImageView(this);
 	            iv.setLayoutParams(mParams);  
-	            iv.setImageResource(pics[i]);  
+	            iv.setBackgroundResource(pics[i]);
 	            views.add(iv);  
 	        }  
 	        vp = (ViewPager) findViewById(R.id.viewpager);
-	        //初始化Adapter  
-	        vpAdapter = new ViewPagerAdapter(views);  
-	        vp.setAdapter(vpAdapter);  
+		//初始化Adapter
+	        vpAdapter = new ViewPagerAdapter(views);
+	        vp.setAdapter(vpAdapter);
 	        //绑定回调  
 	        vp.setOnPageChangeListener(this);  
 	        button = (Button) findViewById(R.id.button);

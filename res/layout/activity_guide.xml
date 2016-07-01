@@ -8,54 +8,55 @@
         android:id="@+id/viewpager"  
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/topbar_bg"
         />      
     
-      
-    <LinearLayout   
-        android:id="@+id/ll"   
-        android:orientation="horizontal"   
-        android:layout_width="wrap_content"   
-        android:layout_height="wrap_content"   
-        android:layout_marginBottom="24.0dip"   
-        android:layout_alignParentBottom="true"   
-        android:layout_centerHorizontal="true">  
-          
-        <ImageView  
-            android:layout_width="wrap_content"  
-            android:layout_height="wrap_content"  
-            android:layout_gravity="center_vertical"  
-            android:clickable="true"  
-            android:padding="15.0dip"  
-            android:src="@drawable/dot" />  
-  
-        <ImageView  
-            android:layout_width="wrap_content"  
-            android:layout_height="wrap_content"  
-            android:layout_gravity="center_vertical"  
-            android:clickable="true"  
-            android:padding="15.0dip"  
-            android:src="@drawable/dot" />  
-  
-        <ImageView  
-            android:layout_width="wrap_content"  
-            android:layout_height="wrap_content"  
-            android:layout_gravity="center_vertical"  
-            android:clickable="true"  
-            android:padding="15.0dip"  
-            android:src="@drawable/dot" />  
-  
-    </LinearLayout>  
-  
-    <Button 
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/dot" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="15.0dip"
+            android:src="@drawable/dot" />
+
+    </LinearLayout>
+
+    <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="立即体验"
+        android:text="@string/splash_jump_buttom"
         android:textSize="20dp"
         android:layout_above="@id/ll"
         android:layout_centerHorizontal="true"
         android:visibility="gone"
-         android:padding="8dp" 
+         android:padding="8dp"
         android:textColor="#ffffff"
         android:background="#249CD5"/>
 </RelativeLayout>

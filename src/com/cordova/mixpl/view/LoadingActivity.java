@@ -24,8 +24,8 @@ public class LoadingActivity extends Activity {
 		setContentView(R.layout.activity_start);
 		// 读取SharedPreferences中需要的数据
 		preferences = getSharedPreferences("count", MODE_WORLD_READABLE);
-//		int count = preferences.getInt("count", 0);
-		int count = 0;
+		int count = preferences.getInt("count", 0);
+//		int count = 0;
 		// 判断程序与第几次运行，如果是第一次运行则跳转到引导页面
 		if (count == 0) {
 			Intent intent = new Intent();
@@ -42,7 +42,7 @@ public class LoadingActivity extends Activity {
 
 		welcomeImg = (ImageView) this.findViewById(R.id.welcome_img);
 		AlphaAnimation anima = new AlphaAnimation(0.3f, 1.0f);
-		anima.setDuration(4000);// 设置动画显示时间
+		anima.setDuration(3000);// 设置动画显示时间
 		welcomeImg.startAnimation(anima);
 		anima.setAnimationListener(new AnimationImpl());
 	}
@@ -51,7 +51,7 @@ public class LoadingActivity extends Activity {
 
 		@Override
 		public void onAnimationStart(Animation animation) {
-			welcomeImg.setBackgroundResource(R.drawable.welcome_4);
+			welcomeImg.setBackgroundResource(R.drawable.qq);
 		}
 
 		@Override

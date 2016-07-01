@@ -3,8 +3,86 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
-	android:background="#000"
 	>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
 
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="50dp">
+
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_centerVertical="true"
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/round_header_img"
+				android:contentDescription="@null"
+				android:focusable="false"
+				android:src="@drawable/icon"></ImageView>
+
+			<TextView
+				android:id="@+id/textView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_gravity="center_vertical"
+				android:layout_toRightOf="@+id/imageView"
+				android:contentDescription="@null"
+				android:textColor="@color/topbar_bg"
+				android:focusable="false"
+				android:text="王小萌"
+				android:textSize="@dimen/header_text_size"></TextView>
+		</RelativeLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/line"></View>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp">
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/line"></View>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp">
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/line"></View>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp">
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/line"></View>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp">
+
+		</LinearLayout>
+	</LinearLayout>
 
 </LinearLayout>
