@@ -10,5 +10,7 @@
     <color name="menu_left_text">#FFFFFF</color>
     <color name="micro_application_title">#000000</color>
     <color name="micro_application_bg">#F0F0EC</color>
-    <color name="blue_light">#249CD5</color>
+    <color name="blue_light">#24CFFF</color>
+    <color name="blue_nor">#249CD5</color>
+    <color name="blue_dark">#249999</color>
 </resources>

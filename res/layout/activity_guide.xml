@@ -58,5 +58,5 @@
         android:visibility="gone"
          android:padding="8dp"
         android:textColor="#ffffff"
-        android:background="#249CD5"/>
+        android:background="@drawable/round_splash_btn"/>
 </RelativeLayout>

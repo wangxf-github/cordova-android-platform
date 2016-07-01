@@ -26,16 +26,6 @@
                 android:text="Tab标题"
                 android:contentDescription="@null" />
 
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="40dp"-->
-                <!--android:text=""-->
-                <!--android:id="@+id/textView"-->
-                <!--android:gravity="center"-->
-                <!--android:textSize="22dp"-->
-                <!--android:layout_alignTop="@+id/pic_main_menu"-->
-                <!--android:layout_toRightOf="@+id/pic_main_menu"-->
-                <!--android:layout_toEndOf="@+id/pic_main_menu" />-->
 
             <ImageView
                 android:id="@+id/pic_main_menu"
@@ -63,30 +53,6 @@
             android:orientation="horizontal" 
             android:baselineAligned="true">
 
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/bottom_tab_1"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1.0" >-->
-
-                <!--<ImageView-->
-                    <!--android:id="@+id/bottom_tab_1_img"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:src="@drawable/btn_know_nor" -->
-                    <!--android:contentDescription="@null"/>-->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/tv_know"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@id/bottom_tab_1_img"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:text="@string/Tab1"-->
-                    <!--android:textColor="@color/bottomtab_normal"-->
-                    <!--android:textSize="12sp" />-->
-            <!--</RelativeLayout>-->
 
             <RadioButton
                 android:id="@+id/bottom_tab_1"
@@ -125,60 +91,19 @@
                 android:textColor="@color/bottomtab_normal"
                 android:textSize="10sp" />
 
-
-            <!--<RelativeLayout-->
-            <!--android:id="@+id/bottom_tab_2"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_weight="1.0" >-->
-
-            <!--<ImageView-->
-            <!--android:id="@+id/bottom_tab_2_img"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:src="@drawable/lvl"-->
-            <!--android:contentDescription="@null" />-->
-
-            <!--<TextView-->
-            <!--android:id="@+id/tv_i_want_know"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/bottom_tab_2_img"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:text="@string/Tab2"-->
-            <!--android:textColor="@color/bottomtab_normal"-->
-            <!--android:textSize="12sp" />-->
-            <!--</RelativeLayout>-->
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/bottom_tab_3"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1.0" >-->
-
-                <!--<ImageView-->
-                    <!--android:id="@+id/bottom_tab_3_img"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:src="@drawable/btn_my_nor"-->
-                    <!--android:contentDescription="@null" />-->
-                <!---->
-
-                <!--<TextView-->
-                    <!--android:id="@+id/tv_me"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/bottom_tab_3_img"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:text="@string/Tab3"-->
-                    <!--android:textColor="@color/bottomtab_normal"-->
-                    <!--android:textSize="12sp" />-->
-            <!--</RelativeLayout>-->
         </RadioGroup>
 
         <!-- 内容部分， fragment切换 -->
 
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line"
+            android:layout_below="@+id/top_tab"
+            android:orientation="vertical"
+            android:layout_gravity="right|top">
+        </LinearLayout>
         <View
             android:id="@+id/line"
             android:layout_width="match_parent"
@@ -186,15 +111,5 @@
             android:layout_above="@id/ll_bottom_tab"
             android:background="@color/line" />
     </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/content_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/line"
-        android:layout_below="@+id/top_tab"
-        android:orientation="vertical"
-        android:layout_gravity="right|top">
-    </LinearLayout>
 
 </FrameLayout>

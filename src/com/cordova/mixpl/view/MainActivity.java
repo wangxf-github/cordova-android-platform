@@ -2,9 +2,11 @@ package com.cordova.mixpl.view;
 
 
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -13,6 +15,7 @@ import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.cordova.mixpl.BuildConfig;
 import com.cordova.mixpl.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
@@ -49,6 +52,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener, S
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+        if(BuildConfig.LOG_DEBUG){
+            Log.e("Test","Test");
+            System.out.println("Test");
+        }
 
 
         initUI();
