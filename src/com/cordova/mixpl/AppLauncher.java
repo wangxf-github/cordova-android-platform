@@ -10,16 +10,12 @@ import org.apache.cordova.CordovaActivity;
  */
 public class AppLauncher extends CordovaActivity{
 
-    String launchAppId;
-    public void AppLauncher(String app_id){
-        launchAppId = app_id;
-    }
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
+        loadUrl("http://shenmingxuanyi.github.io/ChinaPost_LCMS/index.html");
     }
 
 }

@@ -50,7 +50,8 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:gravity="center_vertical"
-            android:orientation="horizontal" 
+            android:orientation="horizontal"
+            android:background="@color/menu_left_color"
             android:baselineAligned="true">
 
 
@@ -61,7 +62,7 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:button="@null"
-                android:drawableTop="@drawable/tab_home"
+                android:drawableTop="@drawable/icon"
                 android:gravity="center"
                 android:text="@string/Tab1"
                 android:textColor="@color/bottomtab_normal"
@@ -73,7 +74,7 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:button="@null"
-                android:drawableTop="@drawable/tab_home"
+                android:drawableTop="@drawable/icon"
                 android:gravity="center"
                 android:text="@string/Tab2"
                 android:textColor="@color/bottomtab_normal"
@@ -85,7 +86,7 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:button="@null"
-                android:drawableTop="@drawable/tab_home"
+                android:drawableTop="@drawable/icon"
                 android:gravity="center"
                 android:text="@string/Tab3"
                 android:textColor="@color/bottomtab_normal"
